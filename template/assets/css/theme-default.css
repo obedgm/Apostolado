@@ -1731,7 +1731,7 @@ input[type="radio"] + labe {
   margin-right: 0;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1099px) {
   .header__logo {
     max-width: 145px;
   }
@@ -2908,9 +2908,10 @@ input[type="radio"] + labe {
   background-size: cover;
 }
 
-.widget--about {
-  background: url("../img/bg-about.jpg") no-repeat 50% 50%;
+.about-img{
+    width: 50%;
 }
+
 
 .widget--about .widget__title {
   text-transform: uppercase;
@@ -2978,6 +2979,7 @@ input[type="radio"] + labe {
 @media (max-width: 991px) {
   .widget--about .widget__content {
     width: auto;
+
     padding-left: 15px;
   }
 }
@@ -3753,8 +3755,8 @@ body.rtl {
   font-size: 0.88235em;
   border: none;
   background: none;
-  color: #ef5350;
-  border: 2px solid #ef5350;
+  color: #9C2825;
+  border: 2px solid #9C2825;
   border-radius: 5px;
 }
 
@@ -3803,7 +3805,7 @@ body.rtl {
   font-size: 0.88235em;
   border: none;
   background: none;
-  color: #ef5350;
+  color: #9C2825;
   text-decoration: underline;
   padding: 0;
 }
@@ -3856,9 +3858,9 @@ body.rtl {
   font-size: 0.88235em;
   border: none;
   background: none;
-  background: #ef5350;
+  background: #9C2825;
   border-radius: 5px;
-  -webkit-box-shadow: 0 5px 0 #c62828;
+  -webkit-box-shadow: 0 5px 0 #9C2825;
   box-shadow: 0 5px 0 #c62828;
   color: #fff;
   margin-bottom: 5px;
@@ -10202,7 +10204,7 @@ a.fc-more:hover {
 
 .slider--wide .slider__watch:before {
   color: #fff;
-  background: #ef5350;
+  background: #9C2825;
   border-radius: 50px;
   margin-right: 20px;
   width: 50px;
@@ -10790,6 +10792,7 @@ a.fc-more:hover {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+    
 }
 
 .countdown--circles .countdown__sep {
@@ -10798,10 +10801,10 @@ a.fc-more:hover {
 
 .countdown--circles .countdown__label {
   text-transform: uppercase;
-  color: #626262;
-  background: #fff;
-  font-size: 14px;
-  width: 70px;
+  color: white;
+  background: #6B5654;
+  font-size: 20px;
+  width: 92px;
   margin: -16px 25px 0 25px;
   position: relative;
   text-align: center;
@@ -11240,19 +11243,72 @@ a.fc-more:hover {
     visibility: hidden;
 }
 
-.post__member.post__ind--0{
-    width: 33.33%;
-    margin: 0;
-}
-.post__member.post__ind--1{
-    width: 33.33%;
-    margin: 0;
-}
-.post__member.post__ind--2{
-    width: 33.33%;
-    margin: 0;
+.overlay{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: black;
 }
 
+
+
+.post__member.post__ind--0{
+    width: 25%;
+    margin: 5px;
+    height: auto;
+}
+
+.post__member.post__ind--0:hover .overlay{
+    opacity: .7;
+}
+
+.post__member.post__ind--1:hover .overlay{
+    opacity: .7;
+}
+
+.post__member.post__ind--2:hover .overlay{
+    opacity: .7;
+}
+
+.post__member.post__ind--3:hover .overlay{
+    opacity: .7;
+}
+
+.overlay_text{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 20px;
+    opacity: 4;
+}
+
+.post__member.post__ind--0:hover{
+    background-color: aqua;
+}
+
+
+.post__member.post__ind--1{
+    width: 25%;
+    margin: 5px;
+    height: auto;
+}
+.post__member.post__ind--2{
+    width: 25%;
+    margin: 5px;
+    height: auto;
+}
+
+.post__member.post__ind--3{
+    width: 25%;
+    height: auto;
+    margin: 5px;
+}
 
 
 .post--main .post__member:before,
@@ -11330,6 +11386,7 @@ a.fc-more:hover {
     left: 0;
     right: 33.3333%;
   }
+    
 
   .post--main .post__item:hover .post__figure--0:before {
     left: -20px;
@@ -13429,6 +13486,7 @@ a.fc-more:hover {
   text-align: center;
   padding-bottom: 1.6471em;
   padding-top: 1.6471em;
+    background-color: #9C2825;
 }
 
 .subscribe__title {
@@ -13499,7 +13557,7 @@ a.fc-more:hover {
 }
 
 .about--simple .about__details p {
-  color: #8c8c8c;
+  color: white;
 }
 
 .about--columns {

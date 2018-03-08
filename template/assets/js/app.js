@@ -2017,8 +2017,8 @@ webpackJsonpapp([0],{
 	    var $seconds = $item.find('.countdown-seconds');
 	    var config = {
 	      readOnly: true,
-	      fgColor: "#ef5350",
-	      bgColor: "#fff",
+	      fgColor: "#9C2825",
+	      bgColor: "#6B5654",
 	      thickness: 0.07,
 	      lineCap: 'round',
 	      min: 0,
@@ -2131,9 +2131,7 @@ webpackJsonpapp([0],{
 	  if ($body.hasClass('scroll-animation') && gridSize.get() === 'lg') {
 
 	    // widgets
-	    reveal('.main .widget:not(.widget--sidebar) .widget__title', {
-	      scale: 1.1
-	    });
+
 
 	    //nextevent--countcircles
 	    var circlesReveal = {
@@ -2153,10 +2151,7 @@ webpackJsonpapp([0],{
 
 
 	    // about simple
-	    reveal('.about--simple .about__details', {
-	      distance: '90px',
-	      origin: 'right'
-	    });
+
 
 	    // sermon main
 	    reveal('.sermon--main .listing__item', {
@@ -2211,6 +2206,11 @@ webpackJsonpapp([0],{
             origin: 'left'
         });
           
+        reveal('.post--main .post__ind--3', {
+            distance: '150px',
+            origin: 'left'
+        });
+          
 	    reveal('.post--main .post__item--0', {
 	      distance: '150px',
 	      origin: 'left'
@@ -2223,6 +2223,12 @@ webpackJsonpapp([0],{
 	    });
 
 	    reveal('.post--main .post__item--2', {
+	      distance: '150px',
+	      origin: 'right',
+	      delay: 100
+	    });
+          
+        reveal('.post--main .post__item--3', {
 	      distance: '150px',
 	      origin: 'right',
 	      delay: 100
